@@ -1,0 +1,206 @@
+ ubntRadioTable  Radio status & statistics              Name    Description     OID     
+ ubntRadioMode          ubntRadioMode           .1.3.6.1.4.1.41112.1.4.1.1.2    sta(1),ap(2),aprepeater(3),apwds(4)
+ ubntRadioCCode         Country code            .1.3.6.1.4.1.41112.1.4.1.1.3    
+ ubntRadioFreq.1         Operating frequency    .1.3.6.1.4.1.41112.1.4.1.1.4    
+ ubntRadioDfsEnabled     DFS status             .1.3.6.1.4.1.41112.1.4.1.1.5    
+ ubntRadioTxPower        Transmit power         .1.3.6.1.4.1.41112.1.4.1.1.7    
+ ubntRadioDistance       Distance               .1.3.6.1.4.1.41112.1.4.1.1.8    
+ ubntRadioAntenna        Antenna                .1.3.6.1.4.1.41112.1.4.1.1.9    
+
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.1.1 = INTEGER: 5
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.2.1 = INTEGER: 4
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.3.1 = INTEGER: 554
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.4.1 = INTEGER: 5745
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.5.1 = INTEGER: 2
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.6.1 = INTEGER: 22
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.7.1 = INTEGER: 66600
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.8.1 = INTEGER: 1
+ SNMPv2-SMI::enterprises.41112.1.4.1.1.9.1 = STRING: "Main"
+                        
+ ubntRadioRssiTable      airSelect protocol statistics          Name    Description     OID     
+ ubntRadioRssi  Data frames rssi per chain      .1.3.6.1.4.1.41112.1.4.2.1.2    
+
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.1.1.1 = INTEGER: 1
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.1.1.2 = INTEGER: 2
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.2.1.1 = INTEGER: 17
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.2.1.2 = INTEGER: 0
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.3.1.1 = INTEGER: 16
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.3.1.2 = INTEGER: 0
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.4.1.1 = INTEGER: 17
+ SNMPv2-SMI::enterprises.41112.1.4.2.1.4.1.2 = INTEGER: 0
+                        
+ ubntAirSyncTable        airSync protocol statistics            Name    Description     OID     
+ ubntAirSyncIfIndex      Index for the ubntAirSyncTable .1.3.6.1.4.1.41112.1.4.3.1.1    
+ ubntAirSyncMode         airSync mode - master/slave    .1.3.6.1.4.1.41112.1.4.3.1.2    disabled(0),master(1),slave(2)
+ ubntAirSyncCount        airSync client count           .1.3.6.1.4.1.41112.1.4.3.1.3    
+ ubntAirSyncDownUtil     airSync down utilization %     .1.3.6.1.4.1.41112.1.4.3.1.4    
+ ubntAirSyncUpUtil       airSync up utilization %       .1.3.6.1.4.1.41112.1.4.3.1.5    
+
+SNMPv2-SMI::enterprises.41112.1.4.3.1.1.1 = INTEGER: 5
+SNMPv2-SMI::enterprises.41112.1.4.3.1.2.1 = INTEGER: 0
+SNMPv2-SMI::enterprises.41112.1.4.3.1.3.1 = INTEGER: 0
+SNMPv2-SMI::enterprises.41112.1.4.3.1.4.1 = INTEGER: 0
+SNMPv2-SMI::enterprises.41112.1.4.3.1.5.1 = INTEGER: 0
+                        
+ubntAirSelTable  airSelect protocol statistics          Name    Description     OID     
+ ubntAirSelEnabled       airSelect status - on/off              .1.3.6.1.4.1.41112.1.4.4.1.2    true(1), false(2) 
+ ubntAirSelInterval      airSelect hop interval (miliseconds)   .1.3.6.1.4.1.41112.1.4.4.1.3    
+
+SNMPv2-SMI::enterprises.41112.1.4.4.1.1.1 = INTEGER: 5
+SNMPv2-SMI::enterprises.41112.1.4.4.1.2.1 = INTEGER: 2
+SNMPv2-SMI::enterprises.41112.1.4.4.1.3.1 = INTEGER: 1000
+                        
+ ubntWlStatTable        Wireless statistics     .1.3.6.1.4.1.41112.1.4.5        Name    Description     OID     
+ ubntWlStatSsid         SSID                    .1.3.6.1.4.1.41112.1.4.5.1.2    
+ ubntWlStatHideSsid     Hide SSID - on/off      .1.3.6.1.4.1.41112.1.4.5.1.3    
+ ubntWlStatApMac        AP MAC address          .1.3.6.1.4.1.41112.1.4.5.1.4    
+ ubntWlStatSignal       Signal strength, dBm    .1.3.6.1.4.1.41112.1.4.5.1.5    
+ ubntWlStatRssi         RSSI, dBm               .1.3.6.1.4.1.41112.1.4.5.1.6    
+ ubntWlStatCcq          CCQ in %                .1.3.6.1.4.1.41112.1.4.5.1.7    
+ ubntWlStatNoiseFloor   Noise floor             .1.3.6.1.4.1.41112.1.4.5.1.8    
+ ubntWlStatTxRate       TX rate                 .1.3.6.1.4.1.41112.1.4.5.1.9    
+ ubntWlStatRxRate       RX rate                 .1.3.6.1.4.1.41112.1.4.5.1.10   
+ ubntWlStatSecurity     Wireless security mode  .1.3.6.1.4.1.41112.1.4.5.1.11   
+ ubntWlStatWdsEnabled   WDS - on/off            .1.3.6.1.4.1.41112.1.4.5.1.12   
+ ubntWlStatApRepeater   AP repeater - on/off    .1.3.6.1.4.1.41112.1.4.5.1.13   
+ ubntWlStatChanWidth    Channel Width           .1.3.6.1.4.1.41112.1.4.5.1.14   
+ ubntWlStatStaCount     Station count           .1.3.6.1.4.1.41112.1.4.5.1.15   
+
+SNMPv2-SMI::enterprises.41112.1.4.5.1.1.1 = INTEGER: 5
+SNMPv2-SMI::enterprises.41112.1.4.5.1.2.1 = STRING: "GEONETCMWZ"
+SNMPv2-SMI::enterprises.41112.1.4.5.1.3.1 = INTEGER: 2
+SNMPv2-SMI::enterprises.41112.1.4.5.1.4.1 = Hex-STRING: DC 9F DB 02 57 F2
+SNMPv2-SMI::enterprises.41112.1.4.5.1.5.1 = INTEGER: -81
+SNMPv2-SMI::enterprises.41112.1.4.5.1.6.1 = INTEGER: 15
+SNMPv2-SMI::enterprises.41112.1.4.5.1.7.1 = INTEGER: 94
+SNMPv2-SMI::enterprises.41112.1.4.5.1.8.1 = INTEGER: -100
+SNMPv2-SMI::enterprises.41112.1.4.5.1.9.1 = INTEGER: 6500000
+SNMPv2-SMI::enterprises.41112.1.4.5.1.10.1 = INTEGER: 9750000
+SNMPv2-SMI::enterprises.41112.1.4.5.1.11.1 = STRING: "WPA2"
+SNMPv2-SMI::enterprises.41112.1.4.5.1.12.1 = INTEGER: 1
+SNMPv2-SMI::enterprises.41112.1.4.5.1.13.1 = INTEGER: 2
+SNMPv2-SMI::enterprises.41112.1.4.5.1.14.1 = INTEGER: 5
+SNMPv2-SMI::enterprises.41112.1.4.5.1.15.1 = Gauge32: 1
+                        
+ ubntAirMaxTable        airMAX protocol statistics             Name    Description     OID     
+ ubntAirMaxEnabled      airMAX status - on/off                  .1.3.6.1.4.1.41112.1.4.6.1.2    
+ ubntAirMaxQuality      airMAX quality - percentage             .1.3.6.1.4.1.41112.1.4.6.1.3    Not available on AC.
+ ubntAirMaxCapacity     airMAX capacity - percentage            .1.3.6.1.4.1.41112.1.4.6.1.3    Not available on AC.
+ ubntAirMaxPriority     airMAX priority - none/high/low/medium  .1.3.6.1.4.1.41112.1.4.6.1.5    
+ ubntAirMaxNoAck        airMAX NoACK mode - on/off              .1.3.6.1.4.1.41112.1.4.6.1.6    
+
+SNMPv2-SMI::enterprises.41112.1.4.6.1.1.1 = INTEGER: 5
+SNMPv2-SMI::enterprises.41112.1.4.6.1.2.1 = INTEGER: 1
+SNMPv2-SMI::enterprises.41112.1.4.6.1.3.1 = INTEGER: 52
+SNMPv2-SMI::enterprises.41112.1.4.6.1.4.1 = INTEGER: 19
+SNMPv2-SMI::enterprises.41112.1.4.6.1.5.1 = INTEGER: 3
+SNMPv2-SMI::enterprises.41112.1.4.6.1.6.1 = INTEGER: 2
+                        
+ubntStaTable     Station list           Name    Description     OID     
+ ubntStaMac             Station MAC address             .1.3.6.1.4.1.41112.1.4.7.1.1    
+ ubntStaName            Station name                    .1.3.6.1.4.1.41112.1.4.7.1.2    
+ ubntStaSignal          Signal strength, dBm            .1.3.6.1.4.1.41112.1.4.7.1.3    
+ ubntStaNoiseFloor      Noise floor                     .1.3.6.1.4.1.41112.1.4.7.1.4    
+ ubntStaDistance        Distance                        .1.3.6.1.4.1.41112.1.4.7.1.5    
+ ubntStaCcq             CCQ in %                        .1.3.6.1.4.1.41112.1.4.7.1.6    
+ ubntStaAmp             airMAX priority                 .1.3.6.1.4.1.41112.1.4.7.1.7    
+ ubntStaAmq             airMAX quality                  .1.3.6.1.4.1.41112.1.4.7.1.8    Not available on AC.
+ ubntStaAmc             airMAX capacity                 .1.3.6.1.4.1.41112.1.4.7.1.9    Not available on AC.
+ ubntStaLastIp          Last known IP address           .1.3.6.1.4.1.41112.1.4.7.1.10   
+ ubntStaTxRate          TX rate                         .1.3.6.1.4.1.41112.1.4.7.1.11   
+ ubntStaRxRate          RX rate                         .1.3.6.1.4.1.41112.1.4.7.1.12   
+ ubntStaTxBytes         TX bytes                        .1.3.6.1.4.1.41112.1.4.7.1.13   
+ ubntStaRxBytes         RX bytes                        .1.3.6.1.4.1.41112.1.4.7.1.14   
+ ubntStaConnTime        Connection Time in seconds      .1.3.6.1.4.1.41112.1.4.7.1.15   
+ ubntStaLocalCINR       Local CINR                      .1.3.6.1.4.1.41112.1.4.7.1.16   AC Only
+ ubntStaTxCapacity      Uplink Capacity in Kbps         .1.3.6.1.4.1.41112.1.4.7.1.17   AC Only
+ ubntStaRxCapacity      Downlink Capacity in Kbps       .1.3.6.1.4.1.41112.1.4.7.1.18   AC Only
+
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.1.1.220.159.219.50.69.151 = Hex-STRING: DC 9F DB 32 45 97
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.2.1.220.159.219.50.69.151 = STRING: "rf2baringhead-capecampbell"
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.3.1.220.159.219.50.69.151 = INTEGER: -82
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.4.1.220.159.219.50.69.151 = INTEGER: -100
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.5.1.220.159.219.50.69.151 = INTEGER: 66750
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.6.1.220.159.219.50.69.151 = INTEGER: 98
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.7.1.220.159.219.50.69.151 = INTEGER: 3
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.8.1.220.159.219.50.69.151 = INTEGER: 52
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.9.1.220.159.219.50.69.151 = INTEGER: 20
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.10.1.220.159.219.50.69.151 = IpAddress: 10.241.64.25
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.11.1.220.159.219.50.69.151 = INTEGER: 9750000
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.12.1.220.159.219.50.69.151 = INTEGER: 9750000
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.13.1.220.159.219.50.69.151 = Counter64: 933568
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.14.1.220.159.219.50.69.151 = Counter64: 5512707
+ SNMPv2-SMI::enterprises.41112.1.4.7.1.15.1.220.159.219.50.69.151 = Timeticks: (173100) 0:28:51.00
+
+
+
+radio
+.1.3.6.1.4.1.41112.1.4.1.1.1
+.1.3.6.1.4.1.41112.1.4.1.1.2
+.1.3.6.1.4.1.41112.1.4.1.1.3
+.1.3.6.1.4.1.41112.1.4.1.1.4
+.1.3.6.1.4.1.41112.1.4.1.1.5
+.1.3.6.1.4.1.41112.1.4.1.1.6
+.1.3.6.1.4.1.41112.1.4.1.1.7
+.1.3.6.1.4.1.41112.1.4.1.1.8
+.1.3.6.1.4.1.41112.1.4.1.1.9
+
+airselect
+.1.3.6.1.4.1.41112.1.4.2.1.1
+.1.3.6.1.4.1.41112.1.4.2.1.2
+.1.3.6.1.4.1.41112.1.4.2.1.3
+.1.3.6.1.4.1.41112.1.4.2.1.4
+
+airsync
+.1.3.6.1.4.1.41112.1.4.3.1.1
+.1.3.6.1.4.1.41112.1.4.3.1.2
+.1.3.6.1.4.1.41112.1.4.3.1.3
+.1.3.6.1.4.1.41112.1.4.3.1.4
+.1.3.6.1.4.1.41112.1.4.3.1.5
+
+airselect
+.1.3.6.1.4.1.41112.1.4.4.1.1
+.1.3.6.1.4.1.41112.1.4.4.1.2
+.1.3.6.1.4.1.41112.1.4.4.1.3
+
+wireless
+.1.3.6.1.4.1.41112.1.4.5.1.1
+.1.3.6.1.4.1.41112.1.4.5.1.10
+.1.3.6.1.4.1.41112.1.4.5.1.11
+.1.3.6.1.4.1.41112.1.4.5.1.12
+.1.3.6.1.4.1.41112.1.4.5.1.13
+.1.3.6.1.4.1.41112.1.4.5.1.14
+.1.3.6.1.4.1.41112.1.4.5.1.15
+.1.3.6.1.4.1.41112.1.4.5.1.2
+.1.3.6.1.4.1.41112.1.4.5.1.3
+.1.3.6.1.4.1.41112.1.4.5.1.4
+.1.3.6.1.4.1.41112.1.4.5.1.5
+.1.3.6.1.4.1.41112.1.4.5.1.6
+.1.3.6.1.4.1.41112.1.4.5.1.7
+.1.3.6.1.4.1.41112.1.4.5.1.8
+.1.3.6.1.4.1.41112.1.4.5.1.9
+
+airMax
+.1.3.6.1.4.1.41112.1.4.6.1.1
+.1.3.6.1.4.1.41112.1.4.6.1.2
+.1.3.6.1.4.1.41112.1.4.6.1.3
+.1.3.6.1.4.1.41112.1.4.6.1.4
+.1.3.6.1.4.1.41112.1.4.6.1.5
+.1.3.6.1.4.1.41112.1.4.6.1.6
+
+station list
+.1.3.6.1.4.1.41112.1.4.7.1.1
+.1.3.6.1.4.1.41112.1.4.7.1.10
+.1.3.6.1.4.1.41112.1.4.7.1.11
+.1.3.6.1.4.1.41112.1.4.7.1.12
+.1.3.6.1.4.1.41112.1.4.7.1.13
+.1.3.6.1.4.1.41112.1.4.7.1.14
+.1.3.6.1.4.1.41112.1.4.7.1.15
+.1.3.6.1.4.1.41112.1.4.7.1.2
+.1.3.6.1.4.1.41112.1.4.7.1.3
+.1.3.6.1.4.1.41112.1.4.7.1.4
+.1.3.6.1.4.1.41112.1.4.7.1.5
+.1.3.6.1.4.1.41112.1.4.7.1.6
+.1.3.6.1.4.1.41112.1.4.7.1.7
+.1.3.6.1.4.1.41112.1.4.7.1.8
+.1.3.6.1.4.1.41112.1.4.7.1.9

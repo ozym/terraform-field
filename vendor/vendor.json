@@ -3,6 +3,30 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "EWJKqoKaqzsRBPgzsXdEAwzUxmM=",
+			"path": "github.com/ozym/airos",
+			"revision": "73b9118d5f18fd56a69a7c71920582386c9f8f13",
+			"revisionTime": "2017-07-01T21:06:49Z"
+		},
+		{
+			"checksumSHA1": "gQqzys8+dP1Dbi/Z3DO3A0BMP9I=",
+			"path": "github.com/ozym/fgr",
+			"revision": "02cd2705a0ba4835d94ee4f167c15dd02484052a",
+			"revisionTime": "2017-07-02T05:47:28Z"
+		},
+		{
+			"checksumSHA1": "XJwi3FplZ1pXckepMqn0/3IJr8M=",
+			"path": "github.com/ozym/hongdian",
+			"revision": "8ed34c386ce4377ea1b496fba917e18149d810be",
+			"revisionTime": "2017-07-12T03:27:38Z"
+		},
+		{
+			"checksumSHA1": "pXUTZPhYk5Bdf2UVn4BP6agD8D8=",
+			"path": "github.com/ozym/ros",
+			"revision": "0c2fb8e30d59568db7dfbe98bc8caf9e97763256",
+			"revisionTime": "2017-07-09T22:36:59Z"
+		},
+		{
 			"checksumSHA1": "nfaQUOu1LJhrgI11R5kZShQ35gM=",
 			"path": "github.com/ozym/skyedge",
 			"revision": "ccacbce0700f1fe5808e54154b065f23b473a55f",
