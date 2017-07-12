@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "nfaQUOu1LJhrgI11R5kZShQ35gM=",
+			"path": "github.com/ozym/skyedge",
+			"revision": "ccacbce0700f1fe5808e54154b065f23b473a55f",
+			"revisionTime": "2017-07-12T03:30:47Z"
+		}
+	],
+	"rootPath": "github.com/ozym/terraform-field"
+}
