@@ -3,6 +3,12 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "INCGNyQhbjp2WLBH28aWLj3N6o0=",
+			"path": "github.com/ScriptRock/crypto/ssh",
+			"revision": "54588e68958efc4e3f43aebf25ce42817e714441",
+			"revisionTime": "2016-09-09T21:23:24Z"
+		},
+		{
 			"checksumSHA1": "EWJKqoKaqzsRBPgzsXdEAwzUxmM=",
 			"path": "github.com/ozym/airos",
 			"revision": "73b9118d5f18fd56a69a7c71920582386c9f8f13",
